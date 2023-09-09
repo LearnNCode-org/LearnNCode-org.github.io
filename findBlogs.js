@@ -1,5 +1,8 @@
 //Variable Definitions
 const folderPath = 'blogs';
+const test2 = document.createElement('p')
+test.text = 'Test2'
+blogContainer.appendChild(test)
 
 // Create a function to fetch and display blog entries
 async function displayBlogEntries() {
