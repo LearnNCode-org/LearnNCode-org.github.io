@@ -31,6 +31,10 @@ async function displayBlogEntries() {
             const entry = document.getElementById('entry').textContent;
         
             // Create a card element
+            const test = document.createElement('p')
+            test.text = 'Test'
+            blogContainer.appendChild(test)
+
             const card = document.createElement('div');
             card.classList.add('blog-card');
         
