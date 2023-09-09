@@ -3,6 +3,9 @@ const folderPath = 'blogs';
 
 // Create a function to fetch and display blog entries
 async function displayBlogEntries() {
+    const test = document.createElement('p')
+    test.text = 'Test1'
+    blogContainer.appendChild(test)
     try {
         const blogContainer = document.getElementById('blog-container');
 
@@ -18,7 +21,7 @@ async function displayBlogEntries() {
 
 
         const test = document.createElement('p')
-        test.text = 'Test'
+        test.text = 'Test1'
         blogContainer.appendChild(test)
 
         // Fetch and display each blog entry
