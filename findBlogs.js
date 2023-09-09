@@ -16,6 +16,11 @@ async function displayBlogEntries() {
         const fileLinks = Array.from(folderDoc.querySelectorAll('a'))
             .map(link => link.getAttribute('href'));
 
+
+        const test = document.createElement('p')
+        test.text = 'Test'
+        blogContainer.appendChild(test)
+
         // Fetch and display each blog entry
         for (const fileLink of fileLinks) {
             const entryResponse = await fetch(`${folderPath}/${fileLink}`);
@@ -31,9 +36,6 @@ async function displayBlogEntries() {
             const entry = document.getElementById('entry').textContent;
         
             // Create a card element
-            const test = document.createElement('p')
-            test.text = 'Test'
-            blogContainer.appendChild(test)
 
             const card = document.createElement('div');
             card.classList.add('blog-card');
